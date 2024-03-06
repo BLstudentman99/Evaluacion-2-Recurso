@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 04:51:45 p. m."/>
+        <attribute name="created" value="aW52aXRhZG87TEFCMDIwMTAxOzIwMjQtMDMtMDY7MDQ6NDM6MzUgcC4gbS47MjgyOQ=="/>
+        <attribute name="edited" value="aW52aXRhZG87TEFCMDIwMTAxOzIwMjQtMDMtMDY7MDQ6NTE6NDUgcC4gbS47MTsyOTM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="califa" type="Real" array="False" size=""/>
+            <output expression="&quot;cual es tu calificaci&#243;n?&quot;" newline="True"/>
+            <input variable="califa"/>
+            <if expression="califa &gt;= 70">
+                <then>
+                    <output expression="&quot;acreditada&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;no acreditada&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
