@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-07 04:44:48 p. m."/>
+        <attribute name="created" value="aW52aXRhZG87TEFCMDIwMTAxOzIwMjQtMDMtMDc7MDQ6MzA6NTYgcC4gbS47MjgyOQ=="/>
+        <attribute name="edited" value="aW52aXRhZG87TEFCMDIwMTAxOzIwMjQtMDMtMDc7MDQ6NDQ6NDggcC4gbS47MjsyOTQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cantidad" type="Integer" array="False" size=""/>
+            <declare name="cantSald" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;cuantas piezas quieres comprar?&quot;" newline="True"/>
+            <input variable="cantidad"/>
+            <if expression="cantidad &gt; 1000">
+                <then>
+                    <assign variable="cantSald" expression="cantidad * 500"/>
+                    <output expression="&quot;te cobro: &quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="cantSald" expression="cantidad * 800"/>
+                    <output expression="&quot;te cobro &quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;El saldo es &quot;" newline="True"/>
+            <output expression="cantSald" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
